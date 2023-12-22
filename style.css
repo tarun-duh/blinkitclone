@@ -6,6 +6,7 @@ body {
 .header {
   display: flex;
   width: 100vw;
+  border-bottom: 0.5px solid #f4f4f4;
 }
 .col-1,
 .col-2 {
@@ -13,20 +14,37 @@ body {
 }
 .col-1 {
   width: 10%;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.5px solid #f4f4f4;
 }
 .col-1 img {
   height: 30px;
   width: 134;
 }
+.col-1:hover {
+  background-color: rgb(242, 242, 242);
+}
 
 .col-2 {
   width: 90%;
   display: flex;
-  background-color: grey;
 }
 
 .innercol-1 {
   width: 20%;
-  background-color: red;
+  background-color: white;
+}
+.innercol-2 {
+  width: 60%;
+  background-color: #f4f4f4;
+}
+.innercol-3 {
+  width: 10%;
+  background-color: white;
+}
+.innercol-4 {
+  width: 10%;
+  background-color: white;
 }
