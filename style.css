@@ -64,7 +64,8 @@ a {
   background-color: white;
 }
 .row2,
-.row3 {
+.row3,
+.row4 {
   display: flex;
   justify-content: center;
 }
