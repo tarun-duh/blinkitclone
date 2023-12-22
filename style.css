@@ -65,7 +65,8 @@ a {
 }
 .row2,
 .row3,
-.row4 {
+.row4,
+.row5 {
   display: flex;
   justify-content: center;
 }
