@@ -50,9 +50,7 @@ a {
   background-color: #f4f4f4;
   border-radius: 12px;
 }
-.innercol-2 input[type="text"]:focus {
-  background-color: aqua;
-}
+
 .innercol-3 {
   display: flex;
   justify-content: center;
@@ -64,4 +62,9 @@ a {
   align-self: end;
   width: 10%;
   background-color: white;
+}
+.row2,
+.row3 {
+  display: flex;
+  justify-content: center;
 }
