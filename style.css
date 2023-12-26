@@ -67,8 +67,8 @@ a {
 .row3,
 .row4,
 .row5,
-.row6 {
-  overflow: ;
+.row6,
+.lastRow {
   padding: 0px 100px;
   display: flex;
   justify-content: center;
