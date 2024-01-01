@@ -138,6 +138,118 @@ a {
 }
 .card1 p {
   margin: 10px 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.inner {
+  justify-content: space-between;
+  width: auto;
+  display: flex;
+}
+.add {
+  height: 33px;
+  width: 68px;
+  border-radius: 4px;
+  border: 0.5px solid #318616;
+  color: #318616;
+  font-weight: 600;
+}
+.footer {
+  display: flex;
+  padding: 100px 100px;
+}
+.footerInnerRow1 {
+  display: flex;
+  flex-direction: column;
+}
+.footerInnerRow2 {
+  margin: 0px 90px;
+  display: flex;
+  flex-direction: column;
+}
+.footerInnerRow3 {
+  display: flex;
+  flex-direction: column;
+}
+.footerInnerRow4 {
+  display: flex;
+  flex-direction: column;
+}
+.footerInnerRow5 {
+  margin: 0px 90px;
+  display: flex;
+  flex-direction: column;
+}
+.footerInnerRow6 {
+  display: flex;
+  flex-direction: column;
+}
+.footerInnerRow1 a,
+.footerInnerRow2 a,
+.footerInnerRow3 a,
+.footerInnerRow4 a,
+.footerInnerRow5 a,
+.footerInnerRow6 a {
+  margin: 5px;
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footercol2 {
+  margin-left: 90px;
+}
+.lastRow {
+  background-color: #6666660a;
+  padding-top: 20px;
+}
+.one {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+.one p {
+  font-size: 12px;
+  color: #666666;
+  font-weight: 200;
+}
+.two {
+  display: flex;
+  width: 33%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  justify-content: center;
+  align-items: center;
+}
+.socialImg1 {
+  height: 30px;
+  width: 92px;
+  margin: 0px 16px;
+}
+.socailImg2 {
+  height: 30px;
+  width: 92px;
+}
+.three {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+}
+.three a {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.endrow {
+  background-color: #6666660a;
+  padding: 10px 80px;
 }
 
 @media screen and (width <= 450px) {
@@ -201,5 +313,45 @@ a {
   .h-2 {
     font-size: 20px;
     margin: 20px;
+  }
+  .card1 {
+    height: 230px;
+  }
+  .card1 img {
+    height: 110px;
+    width: 125px;
+  }
+  .card1 p {
+    margin: 8px 0px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .h-3 {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .footerInnerRow1 a,
+  .footerInnerRow2 a,
+  .footerInnerRow3 a,
+  .footerInnerRow4 a,
+  .footerInnerRow5 a,
+  .footerInnerRow6 a {
+    margin: 5px;
+  }
+  .footercol2 {
+    margin-left: 40px;
+  }
+  .footerInnerRow2,
+  .footerInnerRow5 {
+    margin: 0px 30px;
+  }
+  .lastRow {
+    padding: 20px 30px 0px 30px;
+  }
+  .endrow {
+    background-color: #6666660a;
+    padding: 10px 30px;
   }
 }
