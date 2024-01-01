@@ -54,6 +54,14 @@ a {
 .innercol-2 i {
   font-size: 18px;
 }
+.innercol-2 input {
+  margin-left: 10px;
+  outline: none;
+  border: 0px;
+  width: 95%;
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
 
 .innercol-3 {
   display: flex;
@@ -95,6 +103,7 @@ a {
 .row3 a img {
   height: 195px;
   width: 335px;
+  margin: 0px 5px;
 }
 .row4 a img,
 .row5 a img {
@@ -253,11 +262,52 @@ a {
 }
 
 @media screen and (width <= 450px) {
-  .header {
-    height: 0px;
+  .col-2 {
+    display: block;
+    padding: 15px;
+  }
+
+  .col-1,
+  .myCart,
+  .innercol-3 {
+    display: none;
+  }
+  .innercol-1 {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .innercol-1 a p {
+    font-size: 15px;
+  }
+  .innercol-1 a p b {
+    font-size: 20px;
+  }
+  .innercol-2 {
+    width: 97%;
+  }
+  .row2,
+  .row3,
+  .row4,
+  .row5,
+  .row6,
+  .lastRow {
+    padding: 0px 10px;
+  }
+  .row2 a img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+  }
+  .row3 {
+    flex-wrap: wrap;
+  }
+  .row3 a img {
+    margin: 0px;
+    height: 130px;
+    width: 190px;
   }
 }
-@media screen and (width <= 1050px) {
+@media screen and (450px < width <= 1050px) {
   .col-1,
   .col-2 {
     padding: 12px;
