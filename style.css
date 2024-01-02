@@ -105,8 +105,10 @@ a {
   width: 335px;
   margin: 0px 5px;
 }
-.row4 a img,
-.row5 a img {
+.row4 {
+  flex-wrap: wrap;
+}
+.row4 a img {
   height: 188px;
   width: 140px;
 }
@@ -117,7 +119,6 @@ a {
 .row2,
 .row3,
 .row4,
-.row5,
 .row6,
 .lastRow {
   padding: 0px 80px;
@@ -126,6 +127,7 @@ a {
 }
 .row4 {
   margin-top: 10px;
+  padding: 0px 30px;
 }
 .card1 {
   margin-right: 10px;
@@ -288,7 +290,6 @@ a {
   .row2,
   .row3,
   .row4,
-  .row5,
   .row6,
   .lastRow {
     padding: 0px 10px;
@@ -298,13 +299,55 @@ a {
     width: 100%;
     object-fit: fill;
   }
-  .row3 {
+  .row3,
+  .row4 {
     flex-wrap: wrap;
   }
   .row3 a img {
-    margin: 0px;
+    margin: 0px 5px;
     height: 130px;
     width: 190px;
+  }
+  .row4 a img {
+    height: 140px;
+    width: 100px;
+  }
+  .h-2 {
+    font-size: 18px;
+    margin: 20px 20px 20px;
+  }
+  .row6 {
+    overflow: scroll;
+    justify-content: flex-start;
+  }
+  .footer {
+    padding: 0px 15px;
+    flex-direction: column;
+  }
+  .footerInnerRow2 {
+    margin: 0px 40px;
+  }
+  .footercol2 {
+    margin: 0px;
+  }
+  .footerInnerRow5 {
+    margin: 0px 40px;
+  }
+  .lastRow {
+    padding: 10px 15px;
+    flex-direction: column;
+  }
+  .one,
+  .two,
+  .three {
+    width: 100%;
+  }
+  .three {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .endrow {
+    padding: 0px 15px;
   }
 }
 @media screen and (450px < width <= 1050px) {
@@ -355,10 +398,12 @@ a {
     height: 150px;
     width: 235px;
   }
-  .row4 a img,
-  .row5 a img {
+  .row4 {
+    padding: 0px 10px;
+  }
+  .row4 a img {
     height: 138px;
-    width: 100px;
+    width: 98px;
   }
   .h-2 {
     font-size: 20px;
