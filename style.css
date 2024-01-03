@@ -41,6 +41,9 @@ a {
   width: 20%;
   background-color: white;
 }
+.user {
+  display: none;
+}
 .innercol-2 {
   padding: 12px;
   display: flex;
@@ -275,14 +278,28 @@ a {
     display: none;
   }
   .innercol-1 {
-    width: 80%;
+    width: 100%;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
   }
   .innercol-1 a p {
     font-size: 15px;
   }
   .innercol-1 a p b {
     font-size: 20px;
+  }
+  .user {
+    display: contents;
+  }
+  .user i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black !important;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
   }
   .innercol-2 {
     width: 97%;
