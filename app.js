@@ -7,6 +7,6 @@ function totalprice(event) {
     sum += num;
   });
   let mycart = document.querySelector(".change");
-  mycart.textContent = `${allprice.length}items ₹${sum}`;
+  mycart.textContent = `${allprice.length} ${""} items ₹${sum}`;
   console.log(sum, allprice.length, mycart);
 }
