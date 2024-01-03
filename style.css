@@ -125,8 +125,19 @@ a {
   height: 188px;
   width: 140px;
 }
+.div-h-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+}
 .h-2 {
-  margin: 20px 80px;
+  margin: 20px 50px;
+}
+.h-2-p {
+  margin: 0px 60px;
+  color: #0f8422;
+  font-weight: 700;
 }
 
 .row2,
@@ -344,9 +355,15 @@ a {
     height: 140px;
     width: 90px;
   }
+  .div-h-2 {
+    padding: 0px;
+  }
   .h-2 {
     font-size: 18px;
-    margin: 20px 20px 20px;
+    margin: 20px 15px 20px;
+  }
+  .h-2-p {
+    margin: 0px 15px;
   }
   .row6 {
     overflow: scroll;
@@ -444,7 +461,12 @@ a {
   }
   .h-2 {
     font-size: 20px;
-    margin: 20px;
+    margin: 10px -5px;
+  }
+  .h-2-p {
+    margin: 0px 10px;
+    color: #0f8422;
+    font-weight: 700;
   }
   .card1 {
     height: 230px;
