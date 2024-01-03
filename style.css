@@ -306,11 +306,11 @@ a {
   .row3 a img {
     margin: 0px 5px;
     height: 130px;
-    width: 190px;
+    width: 170px;
   }
   .row4 a img {
     height: 140px;
-    width: 100px;
+    width: 90px;
   }
   .h-2 {
     font-size: 18px;
@@ -321,7 +321,7 @@ a {
     justify-content: flex-start;
   }
   .footer {
-    padding: 0px 15px;
+    padding: 10px 15px;
     flex-direction: column;
   }
   .footerInnerRow2 {
