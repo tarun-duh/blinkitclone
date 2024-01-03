@@ -346,6 +346,9 @@ a {
   .row4 {
     flex-wrap: wrap;
   }
+  .row3 {
+    width: 100%;
+  }
   .row3 a img {
     margin: 0px 5px;
     height: 130px;
