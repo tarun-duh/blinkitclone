@@ -41,6 +41,16 @@ a {
   width: 20%;
   background-color: white;
 }
+.location {
+  display: flex;
+  position: relative;
+}
+.downarrow {
+  position: absolute;
+  bottom: 0px;
+  font-size: 15px;
+  margin-left: 3px;
+}
 .user {
   display: none;
 }
@@ -292,13 +302,18 @@ a {
   .user {
     display: contents;
   }
+  .user a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .user i {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid black !important;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
   }
   .innercol-2 {
@@ -370,7 +385,7 @@ a {
     margin: 0px;
   }
 }
-@media screen and (450px < width <= 1050px) {
+@media screen and (450px < width <= 1099px) {
   .col-1,
   .col-2 {
     padding: 12px;
@@ -379,7 +394,9 @@ a {
     height: 55px;
     width: 95px;
   }
+
   .innercol-1 {
+    width: 25%;
     display: flex;
     align-items: center;
   }
@@ -388,7 +405,7 @@ a {
   }
   .innercol-2 {
     padding: 8px;
-    width: 50%;
+    width: 45%;
   }
   .innercol-2 i {
     font-size: 15px;
@@ -401,13 +418,13 @@ a {
   }
   .myCart {
     margin-top: -55px;
-    height: 47px;
-    width: 120px;
+    height: 45px;
+    width: 110px;
     align-self: flex-end;
     font-size: 14px;
   }
   .myCart i {
-    font-size: 18px;
+    font-size: 15px;
   }
   .row2 a img {
     object-fit: contain;
