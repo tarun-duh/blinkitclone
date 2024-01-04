@@ -69,7 +69,7 @@ function totalprice(event) {
         });
         mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
         if (allprice.length < 1) {
-          mycart.innerHTML = "My cart";
+          mycart.innerHTML = "My Cart";
           console.log("condition two ", start, allprice);
         }
       } else {
