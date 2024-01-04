@@ -99,7 +99,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #0c831f;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: white;
   height: 52px;
@@ -160,6 +160,7 @@ a {
 }
 .card1 {
   margin-right: 10px;
+  justify-content: space-between;
   padding: 12px;
   font-size: 13px;
   font-weight: 600;
@@ -180,6 +181,11 @@ a {
   margin: 10px 0px;
   font-size: 13px;
   font-weight: 600;
+}
+.quantity {
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  margin: 0px 0px 15px 0px !important;
 }
 .inner {
   justify-content: space-between;
