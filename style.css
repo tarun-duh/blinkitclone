@@ -107,8 +107,12 @@ a {
   border: 0px;
   border-radius: 8px;
 }
+
 .myCart i {
   font-size: 20px;
+}
+.change {
+  padding: 0px 6px;
 }
 .row2 {
   padding: 100px 80px 0px;
@@ -199,6 +203,23 @@ a {
   border: 0.5px solid #318616;
   color: #318616;
   font-weight: 600;
+}
+.active {
+  background-color: #0c831f;
+}
+.addBtnChange {
+  background-color: #0c831f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plus-minus-divs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33%;
 }
 .footer {
   display: flex;
