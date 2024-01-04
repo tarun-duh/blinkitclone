@@ -72,7 +72,6 @@ function totalprice(event) {
           mycart.innerHTML = "My cart";
           console.log("condition two ", start, allprice);
         }
-        // allprice.pop();
       } else {
         console.log(allprice, "condition three", start);
         quantity.innerHTML = --start;
