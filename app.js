@@ -53,7 +53,7 @@ function totalprice(event) {
     //minus function
     minus.addEventListener("click", function (event) {
       event.stopPropagation();
-      console.log("minus");
+      console.log("minus", start);
       if (start < 2) {
         console.log("first condition", start, allprice);
         btn.classList.remove("addBtnChange");
