@@ -60,7 +60,7 @@ function totalprice(event) {
         btn.classList.remove("active");
         btn.innerHTML = "ADD";
         // mycart.innerHTML = "My cart";
-        quantity.innerHTML = --start;
+        // quantity.innerHTML = --start;
         let ind = allprice.indexOf(parseInt(btn.value));
         allprice.splice(ind, 1);
         let sum = 0;
