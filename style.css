@@ -221,6 +221,25 @@ a {
   height: 100%;
   width: 33%;
 }
+.phoneCart {
+  background-color: #0c831f;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0px 10px 10px 10px;
+  height: 4%;
+  width: auto;
+}
+.phoneCartChange {
+  display: block;
+}
 .footer {
   display: flex;
   padding: 100px 100px;
