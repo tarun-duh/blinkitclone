@@ -110,5 +110,8 @@ viewCart.addEventListener("click", function (event) {
 
 function myCartFunc() {
   console.log("tarun");
+  let cartDetails = document.getElementById("cartDetails");
   document.getElementById("trans-cart").style.display = "block";
+  document.querySelector("body").classList.add("no-scroll");
+  cartDetails.classList.add("scroll");
 }
