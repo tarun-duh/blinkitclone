@@ -100,3 +100,15 @@ function totalprice(event) {
     });
   }
 }
+let viewCart = document.getElementById("viewCart");
+viewCart.addEventListener("click", function (event) {
+  event.stopPropagation();
+  console.log("you clicked view cart");
+});
+
+//mycartfunc
+
+function myCartFunc() {
+  console.log("tarun");
+  document.getElementById("trans-cart").style.display = "block";
+}

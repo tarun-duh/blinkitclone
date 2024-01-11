@@ -335,6 +335,30 @@ a {
   background-color: #6666660a;
   padding: 10px 80px;
 }
+#trans-cart {
+  display: none;
+}
+#transparent {
+  background-color: rgba(0, 0, 0, 0.386);
+  font-size: 20px;
+  height: 100%;
+  width: 75%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+#cartDetails {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
 
 @media screen and (width <= 450px) {
   .col-2 {
