@@ -37,11 +37,11 @@ function totalprice(event) {
 
     //phonecart
 
-    // if (window.innerWidth < 700) {
-    //   let phonecart = document.getElementsByClassName(".phoneCart");
-    //   phonecart.classList.add("phoneCartChange");
-    //   console.log("window.inner");
-    // }
+    if (window.innerWidth < 700) {
+      let phonecart = document.getElementsByClassName(".phoneCart");
+      phonecart.classList.add("phoneCartChange");
+      console.log("window.inner");
+    }
 
     //plus function
     plus.addEventListener("click", function (event) {
