@@ -221,7 +221,7 @@ a {
   height: 100%;
   width: 33%;
 }
-.phoneCart {
+#phoneCart {
   background-color: #0c831f;
   border-radius: 8px;
   padding: 10px;
@@ -237,9 +237,7 @@ a {
   height: 4%;
   width: auto;
 }
-.phoneCartChange {
-  display: block;
-}
+
 .footer {
   display: flex;
   padding: 100px 100px;

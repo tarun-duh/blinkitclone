@@ -3,9 +3,15 @@ let allprice = [];
 //totalprice function
 //main function
 function totalprice(event) {
+  console.log("button click ho gya");
   let btn = event.target;
 
   let mycart = document.querySelector(".change");
+  let total = document.getElementById("total");
+  //phonecart
+  if (window.innerWidth < 700) {
+    document.getElementById("phoneCart").style.display = "flex";
+  }
   // mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
   if (btn.classList.contains("active")) {
     console.log("yes");
@@ -16,6 +22,8 @@ function totalprice(event) {
     allprice.forEach((num) => {
       sum += num;
     });
+    total.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
+
     mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
     btn.classList.add("addBtnChange");
     btn.classList.add("active");
@@ -35,14 +43,6 @@ function totalprice(event) {
     btn.appendChild(quantity);
     btn.appendChild(plus);
 
-    //phonecart
-
-    if (window.innerWidth < 700) {
-      let phonecart = document.getElementsByClassName(".phoneCart");
-      phonecart.classList.add("phoneCartChange");
-      console.log("window.inner");
-    }
-
     //plus function
     plus.addEventListener("click", function (event) {
       event.stopPropagation();
@@ -54,7 +54,10 @@ function totalprice(event) {
       });
       console.log("plus");
       quantity.innerHTML = ++start;
+
       mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
+      total.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
+
       console.log(allprice, btn.value, sum, newvalue, start);
     });
 
@@ -75,9 +78,11 @@ function totalprice(event) {
         allprice.forEach((num) => {
           sum += num;
         });
+        total.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
         mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
         if (allprice.length < 1) {
           mycart.innerHTML = "My Cart";
+          document.getElementById("phoneCart").style.display = "none";
           console.log("condition two ", start, allprice);
         }
       } else {
@@ -89,6 +94,7 @@ function totalprice(event) {
         allprice.forEach((num) => {
           sum += num;
         });
+        total.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
         mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
       }
     });
