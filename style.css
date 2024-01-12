@@ -342,18 +342,22 @@ a {
   background-color: rgba(0, 0, 0, 0.591);
   font-size: 20px;
   height: 100%;
-  width: 75%;
+  width: 90%;
   position: fixed;
   left: 0;
   bottom: 0;
   top: 0;
 }
 #cartDetails {
-  background-color: white;
+  background-color: #f5f7fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
   color: black;
-  font-size: 20px;
   height: 100%;
-  width: 25%;
+  width: 380px;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -365,6 +369,52 @@ a {
 }
 .scroll {
   overflow-y: scroll;
+}
+.my {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+#upper {
+  background-color: white;
+  padding: 18px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#emptycart {
+  margin-top: 12px;
+  width: 85%;
+  display: none;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+}
+#details {
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 800;
+}
+#detail-2 {
+  margin: 10px 0px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b4b4b4;
+}
+#shopping {
+  background-color: #0c831f;
+  color: white;
+  height: 36px;
+  width: 137px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+}
+#emptyimage {
+  height: 144px;
+  width: 144px;
 }
 
 @media screen and (width <= 450px) {
