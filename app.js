@@ -1,5 +1,4 @@
 let allprice = [];
-
 //totalprice function
 //main function
 function totalprice(event) {
@@ -18,7 +17,7 @@ function totalprice(event) {
   } else {
     let newvalue = parseInt(event.target.value);
     allprice.push(newvalue);
-    var sum = 0;
+    let sum = 0;
     allprice.forEach((num) => {
       sum += num;
     });
@@ -48,7 +47,7 @@ function totalprice(event) {
       event.stopPropagation();
       let newvalue = parseInt(btn.value);
       allprice.push(newvalue);
-      var sum = 0;
+      let sum = 0;
       allprice.forEach((num) => {
         sum += num;
       });
@@ -74,7 +73,7 @@ function totalprice(event) {
         // quantity.innerHTML = --start;
         let ind = allprice.indexOf(parseInt(btn.value));
         allprice.splice(ind, 1);
-        var sum = 0;
+        let sum = 0;
         allprice.forEach((num) => {
           sum += num;
         });
@@ -90,7 +89,7 @@ function totalprice(event) {
         quantity.innerHTML = --start;
         let ind = allprice.indexOf(parseInt(btn.value));
         allprice.splice(ind, 1);
-        var sum = 0;
+        let sum = 0;
         allprice.forEach((num) => {
           sum += num;
         });
@@ -110,8 +109,12 @@ viewCart.addEventListener("click", function (event) {
 //mycartfunc
 
 function myCartFunc() {
-  let total = document.getElementById("total");
-  total.innerText = "hello";
+  let grand = document.getElementById("grand");
+  let sum = 0;
+  allprice.forEach((num) => {
+    sum += num;
+  });
+  grand.innerHTML = sum;
   let cartDetails = document.getElementById("cartDetails");
   shopping.addEventListener("click", function () {
     document.getElementById("trans-cart").style.display = "none";
@@ -123,6 +126,7 @@ function myCartFunc() {
   cartDetails.classList.add("scroll");
   if (allprice.length >= 1) {
     emptycart.style.display = "none";
+    bill.style.display = "block";
   }
   let cancle = document.querySelector(".cancle");
   cancle.addEventListener("click", function () {
