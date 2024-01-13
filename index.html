@@ -437,8 +437,41 @@
         <p id="detail-2">Your favourite items are just a click away</p>
         <button id="shopping">Start Shopping</button>
       </div>
-    </div>
+      <div class="bill">
+        <p style="font-size: 15px; font-weight: 800; margin: 0px; text-align: left;">Bill details</p>
+        <div class="item-total">
+          <div class="total">
+            <i class="fa-solid fa-receipt"></i>
+            <p style="margin-left: 5px;">Item total</p>
+          </div>
+          <p>total</p>
+        </div>
+        <div class="delivery-charge">
+          <div class="delivery">
+            <i class="fa-solid fa-motorcycle"></i>
+            <p style="margin-left: 5px;">Delivery charge</p>
+          </div>
+          <p><strike>₹16</strike> FREE</p>
+        </div>
+        <div class="discount">
+          <form action="#" class="disform">
+            <label for="discount">Coupon code</label>
+            <select name="discount" id="discount">
+              <option value="10">flat10</option>
+              <option value="15">flat15</option>
+              <option value="20">flat20</option>
+            </select>
+            <input  type="submit" id="apply" value="Apply">
+          </form>
+          </div>
+        <div style="font-weight: 800;" class="grand-total">
+          <p>Grand total</p>
+          <p id="total"></p>
+        </div>
+      </div>
+    </div>  
   </div>
+  
   <script src="app.js"></script>
   </body>
 </html>

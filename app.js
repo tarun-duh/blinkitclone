@@ -3,9 +3,9 @@ let allprice = [];
 //totalprice function
 //main function
 function totalprice(event) {
-  console.log("button click ho gya");
+  // console.log("button click ho gya");
   let btn = event.target;
-
+  console.log(event);
   let mycart = document.querySelector(".change");
   let total = document.getElementById("total");
   //phonecart
@@ -18,7 +18,7 @@ function totalprice(event) {
   } else {
     let newvalue = parseInt(event.target.value);
     allprice.push(newvalue);
-    let sum = 0;
+    var sum = 0;
     allprice.forEach((num) => {
       sum += num;
     });
@@ -48,25 +48,25 @@ function totalprice(event) {
       event.stopPropagation();
       let newvalue = parseInt(btn.value);
       allprice.push(newvalue);
-      let sum = 0;
+      var sum = 0;
       allprice.forEach((num) => {
         sum += num;
       });
-      console.log("plus");
+      // console.log("plus");
       quantity.innerHTML = ++start;
 
       mycart.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
       total.innerHTML = `${allprice.length} ${""} items </br> ₹${sum}`;
 
-      console.log(allprice, btn.value, sum, newvalue, start);
+      // console.log(allprice, btn.value, sum, newvalue, start);
     });
 
     //minus function
     minus.addEventListener("click", function (event) {
       event.stopPropagation();
-      console.log("minus", start);
+      // console.log("minus", start);
       if (start < 2) {
-        console.log("first condition", start, allprice);
+        // console.log("first condition", start, allprice);
         btn.classList.remove("addBtnChange");
         btn.classList.remove("active");
         btn.innerHTML = "ADD";
@@ -74,7 +74,7 @@ function totalprice(event) {
         // quantity.innerHTML = --start;
         let ind = allprice.indexOf(parseInt(btn.value));
         allprice.splice(ind, 1);
-        let sum = 0;
+        var sum = 0;
         allprice.forEach((num) => {
           sum += num;
         });
@@ -83,14 +83,14 @@ function totalprice(event) {
         if (allprice.length < 1) {
           mycart.innerHTML = "My Cart";
           document.getElementById("phoneCart").style.display = "none";
-          console.log("condition two ", start, allprice);
+          // console.log("condition two ", start, allprice);
         }
       } else {
-        console.log(allprice, "condition three", start);
+        // console.log(allprice, "condition three", start);
         quantity.innerHTML = --start;
         let ind = allprice.indexOf(parseInt(btn.value));
         allprice.splice(ind, 1);
-        let sum = 0;
+        var sum = 0;
         allprice.forEach((num) => {
           sum += num;
         });
@@ -110,6 +110,8 @@ viewCart.addEventListener("click", function (event) {
 //mycartfunc
 
 function myCartFunc() {
+  let total = document.getElementById("total");
+  total.innerText = "hello";
   let cartDetails = document.getElementById("cartDetails");
   shopping.addEventListener("click", function () {
     document.getElementById("trans-cart").style.display = "none";
@@ -121,8 +123,6 @@ function myCartFunc() {
   cartDetails.classList.add("scroll");
   if (allprice.length >= 1) {
     emptycart.style.display = "none";
-    let itemdiv = document.createElement("div");
-    itemdiv.innerHTML = "harsh";
   }
   let cancle = document.querySelector(".cancle");
   cancle.addEventListener("click", function () {
@@ -130,3 +130,11 @@ function myCartFunc() {
     document.querySelector("body").classList.remove("no-scroll");
   });
 }
+
+//discountfunc
+
+document.getElementById("apply").addEventListener("click", function (event) {
+  event.preventDefault();
+  console.log("hello tarun");
+  console.log(discount.value);
+});
