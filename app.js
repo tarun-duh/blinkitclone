@@ -110,11 +110,13 @@ viewCart.addEventListener("click", function (event) {
 
 function myCartFunc() {
   let grand = document.getElementById("grand");
+  let items_total = document.getElementById("totals");
   let sum = 0;
   allprice.forEach((num) => {
     sum += num;
   });
   grand.innerHTML = sum;
+  items_total.innerHTML = sum;
   let cartDetails = document.getElementById("cartDetails");
   shopping.addEventListener("click", function () {
     document.getElementById("trans-cart").style.display = "none";
