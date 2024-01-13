@@ -110,7 +110,6 @@ viewCart.addEventListener("click", function (event) {
 //mycartfunc
 
 function myCartFunc() {
-  console.log("tarun");
   let cartDetails = document.getElementById("cartDetails");
   shopping.addEventListener("click", function () {
     document.getElementById("trans-cart").style.display = "none";
@@ -120,8 +119,10 @@ function myCartFunc() {
   document.getElementById("trans-cart").style.display = "flex";
   document.querySelector("body").classList.add("no-scroll");
   cartDetails.classList.add("scroll");
-  if (allprice.length < 1) {
-    emptycart.style.display = "block";
+  if (allprice.length >= 1) {
+    emptycart.style.display = "none";
+    let itemdiv = document.createElement("div");
+    itemdiv.innerHTML = "harsh";
   }
   let cancle = document.querySelector(".cancle");
   cancle.addEventListener("click", function () {
