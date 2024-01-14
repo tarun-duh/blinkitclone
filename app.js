@@ -104,6 +104,33 @@ let viewCart = document.getElementById("viewCart");
 viewCart.addEventListener("click", function (event) {
   event.stopPropagation();
   console.log("you clicked view cart");
+  let grand = document.getElementById("grand");
+  let items_total = document.getElementById("totals");
+  let sum = 0;
+  allprice.forEach((num) => {
+    sum += num;
+  });
+  grand.innerHTML = sum;
+  items_total.innerHTML = sum;
+  let cartDetails = document.getElementById("cartDetails");
+  cartDetails.style.width = "100%";
+  shopping.addEventListener("click", function () {
+    document.getElementById("trans-cart").style.display = "none";
+    document.querySelector("body").classList.remove("no-scroll");
+  });
+  let emptyimage = document.getElementById("emptyimage");
+  document.getElementById("trans-cart").style.display = "flex";
+  document.querySelector("body").classList.add("no-scroll");
+  cartDetails.classList.add("scroll");
+  if (allprice.length >= 1) {
+    emptycart.style.display = "none";
+    bill.style.display = "block";
+  }
+  let cancle = document.querySelector(".cancle");
+  cancle.addEventListener("click", function () {
+    document.getElementById("trans-cart").style.display = "none";
+    document.querySelector("body").classList.remove("no-scroll");
+  });
 });
 
 //mycartfunc
