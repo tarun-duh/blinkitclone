@@ -142,5 +142,11 @@ function myCartFunc() {
 document.getElementById("apply").addEventListener("click", function (event) {
   event.preventDefault();
   console.log("hello tarun");
-  console.log(discount.value);
+  let sum = 0;
+  allprice.forEach((num) => {
+    sum += num;
+  });
+  let finalprice = Math.round(sum - (sum / 100) * discount.value);
+  grand.innerHTML = finalprice;
+  console.log(discount.value, sum, finalprice);
 });
