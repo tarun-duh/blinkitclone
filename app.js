@@ -125,6 +125,7 @@ viewCart.addEventListener("click", function (event) {
   if (allprice.length >= 1) {
     emptycart.style.display = "none";
     bill.style.display = "block";
+    policy.style.display = "block";
   }
   let cancle = document.querySelector(".cancle");
   cancle.addEventListener("click", function () {
@@ -156,6 +157,7 @@ function myCartFunc() {
   if (allprice.length >= 1) {
     emptycart.style.display = "none";
     bill.style.display = "block";
+    policy.style.display = "block";
   }
   let cancle = document.querySelector(".cancle");
   cancle.addEventListener("click", function () {

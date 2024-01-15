@@ -416,7 +416,8 @@ a {
   height: 144px;
   width: 144px;
 }
-#bill {
+#bill,
+#policy {
   margin-top: 12px;
   width: 85%;
   padding: 16px;
